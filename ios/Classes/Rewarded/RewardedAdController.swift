@@ -4,8 +4,11 @@ import GoogleMobileAds
 class RewardedAdController: NSObject, GADFullScreenContentDelegate {
     var rewardedAd: GADRewardedAd!
 
-//    var loadRequested: ((MethodChannel.Result) -> Unit)? = null
 
+//Hello!!
+
+//    var loadRequested: ((MethodChannel.Result) -> Unit)? = null
+let hh:String
     let id: String
     let channel: FlutterMethodChannel
     var result: FlutterResult?
