@@ -5,7 +5,6 @@ import 'package:flutter/services.dart';
 import '../../native_admob_flutter.dart';
 import '../utils.dart';
 
-// test3
 /// The events a [RewardedAd] can receive. Listen
 /// to the events using `rewardedAd.onEvent.listen((event) {})`.
 ///

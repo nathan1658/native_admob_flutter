@@ -68,7 +68,7 @@ class RewardedIntersititalAdController: NSObject, GADFullScreenContentDelegate {
         result!(false)
     }
 
-    func adDidPresentFullScreenContent(_: GADFullScreenPresentingAd) {
+    func adWillPresentFullScreenContent(_: GADFullScreenPresentingAd) {
         channel.invokeMethod("onAdShowedFullScreenContent", arguments: nil)
     }
 

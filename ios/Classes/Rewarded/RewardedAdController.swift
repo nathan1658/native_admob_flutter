@@ -4,11 +4,6 @@ import GoogleMobileAds
 class RewardedAdController: NSObject, GADFullScreenContentDelegate {
     var rewardedAd: GADRewardedAd!
 
-
-//Hello!!
-
-//    var loadRequested: ((MethodChannel.Result) -> Unit)? = null
-let hh:String
     let id: String
     let channel: FlutterMethodChannel
     var result: FlutterResult?
@@ -73,7 +68,7 @@ let hh:String
         result!(false)
     }
 
-    func adDidPresentFullScreenContent(_: GADFullScreenPresentingAd) {
+    func adWillPresentFullScreenContent(_: GADFullScreenPresentingAd) {
         channel.invokeMethod("onAdShowedFullScreenContent", arguments: nil)
     }
 
